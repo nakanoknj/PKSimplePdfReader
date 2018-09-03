@@ -21,25 +21,45 @@ class ViewController: UITableViewController {
         
         switch indexPath.row {
         case 0:
-            // basic usage
-            guard let path = Bundle.main.path(forResource: "input_pdf", ofType: "pdf"),
-                let pdfDocument = PDFDocument(url: URL(fileURLWithPath: path)) else {
-                    return
+            // Basic usage
+            guard
+                let path = Bundle.main.path(forResource: "input_pdf", ofType: "pdf"),
+                let pdfDocument = PDFDocument(url: URL(fileURLWithPath: path)) else
+            {
+                return
             }
-            let info = ReaderInfo(of: pdfDocument)
+            var info = ReaderInfo(of: pdfDocument)
+            info.title = "The Title"
             guard let vc = PKSimplePdfReader.create(info) else { return }
             navigationController?.pushViewController(vc, animated: true)
             
         case 1:
-            // cuttomize
-            guard let path = Bundle.main.path(forResource: "input_pdf", ofType: "pdf"),
-                let pdfDocument = PDFDocument(url: URL(fileURLWithPath: path)) else {
-                    return
+            // Customize
+            guard
+                let path = Bundle.main.path(forResource: "input_pdf1", ofType: "pdf"),
+                let pdfDocument = PDFDocument(url: URL(fileURLWithPath: path)) else
+            {
+                return
             }
             var info = ReaderInfo(of: pdfDocument)
-            info.title = "Title Of Document"
+            info.title = "Customize"
             info.backgroundColor = UIColor.orange
             info.saveLastPageIndex = true
+            guard let vc = PKSimplePdfReader.create(info) else { return }
+            navigationController?.pushViewController(vc, animated: true)
+            
+        case 2:
+            // Disable functions
+            guard
+                let path = Bundle.main.path(forResource: "input_pdf", ofType: "pdf"),
+                let pdfDocument = PDFDocument(url: URL(fileURLWithPath: path)) else
+            {
+                return
+            }
+            var info = ReaderInfo(of: pdfDocument)
+            info.title = "Disable Functions"
+            info.cropMarginButton = nil
+            info.thumbnailOpenButton = nil
             guard let vc = PKSimplePdfReader.create(info) else { return }
             navigationController?.pushViewController(vc, animated: true)
             

@@ -22,7 +22,7 @@
 		760EC21C21217264005F6870 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760EC21621217263005F6870 /* ContentViewController.swift */; };
 		760EC21D21217264005F6870 /* ThumbnailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760EC21721217263005F6870 /* ThumbnailViewController.swift */; };
 		760EC21E21217264005F6870 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760EC21821217263005F6870 /* Slider.swift */; };
-		760EC221212175A6005F6870 /* input_pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 760EC220212175A6005F6870 /* input_pdf.pdf */; };
+		760EC221212175A6005F6870 /* input_pdf1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 760EC220212175A6005F6870 /* input_pdf1.pdf */; };
 		760EC22321217779005F6870 /* PKSimplePdfReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760EC22221217779005F6870 /* PKSimplePdfReader.swift */; };
 		7621524B212E2E9E0035B0CF /* CropMarginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7621524A212E2E9E0035B0CF /* CropMarginViewController.swift */; };
 		7621524E212FEB0C0035B0CF /* CropHandleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7621524D212FEB0C0035B0CF /* CropHandleView.swift */; };
@@ -31,6 +31,7 @@
 		762152AA21367C200035B0CF /* ThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762152A921367C200035B0CF /* ThumbnailCell.swift */; };
 		762152E52136D7340035B0CF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762152E42136D7340035B0CF /* Extensions.swift */; };
 		762B3A57213B7E29005100DB /* ThumbnailStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B3A56213B7E29005100DB /* ThumbnailStore.swift */; };
+		76BDEEC4213CDF8D00C6AD0E /* input_pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 76BDEEC3213CDF8D00C6AD0E /* input_pdf.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,7 +92,7 @@
 		760EC21621217263005F6870 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		760EC21721217263005F6870 /* ThumbnailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailViewController.swift; sourceTree = "<group>"; };
 		760EC21821217263005F6870 /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
-		760EC220212175A6005F6870 /* input_pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = input_pdf.pdf; sourceTree = "<group>"; };
+		760EC220212175A6005F6870 /* input_pdf1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = input_pdf1.pdf; sourceTree = "<group>"; };
 		760EC22221217779005F6870 /* PKSimplePdfReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKSimplePdfReader.swift; sourceTree = "<group>"; };
 		7621524A212E2E9E0035B0CF /* CropMarginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropMarginViewController.swift; sourceTree = "<group>"; };
 		7621524D212FEB0C0035B0CF /* CropHandleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropHandleView.swift; sourceTree = "<group>"; };
@@ -100,6 +101,7 @@
 		762152A921367C200035B0CF /* ThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCell.swift; sourceTree = "<group>"; };
 		762152E42136D7340035B0CF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		762B3A56213B7E29005100DB /* ThumbnailStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailStore.swift; sourceTree = "<group>"; };
+		76BDEEC3213CDF8D00C6AD0E /* input_pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = input_pdf.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +159,8 @@
 				760EC1D62121706F005F6870 /* Assets.xcassets */,
 				760EC1D82121706F005F6870 /* LaunchScreen.storyboard */,
 				760EC1DB2121706F005F6870 /* Info.plist */,
-				760EC220212175A6005F6870 /* input_pdf.pdf */,
+				760EC220212175A6005F6870 /* input_pdf1.pdf */,
+				76BDEEC3213CDF8D00C6AD0E /* input_pdf.pdf */,
 			);
 			path = PKSimplePdfReaderDemo;
 			sourceTree = "<group>";
@@ -353,8 +356,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				760EC1DA2121706F005F6870 /* LaunchScreen.storyboard in Resources */,
+				76BDEEC4213CDF8D00C6AD0E /* input_pdf.pdf in Resources */,
 				760EC1D72121706F005F6870 /* Assets.xcassets in Resources */,
-				760EC221212175A6005F6870 /* input_pdf.pdf in Resources */,
+				760EC221212175A6005F6870 /* input_pdf1.pdf in Resources */,
 				760EC1D52121706C005F6870 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
