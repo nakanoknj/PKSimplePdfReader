@@ -1,6 +1,8 @@
 # PKSimplePdfReader
 A Simple PDF Document Reader.
 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
 ## Screenshots
 #### Curl Transition
 <img src="https://github.com/nakanoknj/PKSimplePdfReader/blob/images/curl.gif">
