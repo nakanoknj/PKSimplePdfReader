@@ -18,3 +18,31 @@ A Simple PDF Document Reader.
 #### Crop Margins
 <img src="https://github.com/nakanoknj/PKSimplePdfReader/blob/images/crop.gif">
 
+## Requirements
+- Swift 4+
+- iOS 11+
+
+## Installation
+### Carthage
+```
+github "nakanoknj/PKSimplePdfReader"
+```
+
+## Usage
+```
+import PDFKit
+import PKSimplePdfReader
+
+
+# In you view controller
+guard
+    let path = Bundle.main.path(forResource: "input_pdf", ofType: "pdf"),
+    let pdfDocument = PDFDocument(url: URL(fileURLWithPath: path)) else
+{
+    return
+}
+var info = ReaderInfo(of: pdfDocument)
+info.title = "The Title"
+guard let vc = PKSimplePdfReader.create(info) else { return }
+navigationController?.pushViewController(vc, animated: true)
+```
