@@ -456,13 +456,17 @@ extension PKCurlReader: SliderDelegate {
         let originX = self.view.center.x - sender.thumbnailView.bounds.width / 2
         let originY = self.view.bounds.height - sender.thumbnailView.bounds.height - 44
         sender.thumbnailView.frame.origin = CGPoint(x: originX, y: originY)
+        sender.value = Float(currentIndex)
         self.view.addSubview(sender.thumbnailView)
+        onValueChanged(sender)
     }
     
     func onValueChanged(_ sender: Slider) {
         let pageIndex = sender.intValue
-        sender.thumbnailImageView?.image = thumbnailStore[pageIndex]
-        sender.thumbnailLabel?.text = "\(pageIndex + 1) of \(pdfDocument.pageCount)"
+        let image = thumbnailStore[pageIndex]
+        let text = "\(pageIndex + 1) of \(pdfDocument.pageCount)"
+        sender.thumbnailImageView?.image = image
+        sender.thumbnailLabel?.text = text
     }
     
     func onTouchCancel(_ sender: Slider) {
