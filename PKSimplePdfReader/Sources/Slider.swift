@@ -24,7 +24,6 @@ class Slider: UISlider {
     /// View to display thumbnails.
     ///
     lazy var thumbnailView: UIView = {
-        print("kita!!")
         let viewHeight = max(UIScreen.main.bounds.height, UIScreen.main.bounds.width) * 0.4
         let viewWidth = viewHeight * 3 / 4
         let tnView = UIView(frame: CGRect.zero)
