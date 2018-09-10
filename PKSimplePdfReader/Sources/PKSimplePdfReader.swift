@@ -106,7 +106,11 @@ public struct ReaderInfo {
 }
 
 public class PKSimplePdfReader {
-    public class func create(_ readerInfo: ReaderInfo) -> PKCurlReader? {
-        return PKCurlReader(readerInfo)
+//    public class func create(_ readerInfo: ReaderInfo) -> PKCurlReader? {
+//        return PKCurlReader(readerInfo)
+//    }
+    
+    public class func create(_ readerInfo: ReaderInfo) -> UIViewController? {
+        return PDFKitReader(readerInfo)
     }
 }

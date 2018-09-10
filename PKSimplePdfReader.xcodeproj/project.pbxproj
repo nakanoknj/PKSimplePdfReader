@@ -31,6 +31,7 @@
 		762152AA21367C200035B0CF /* ThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762152A921367C200035B0CF /* ThumbnailCell.swift */; };
 		762152E52136D7340035B0CF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762152E42136D7340035B0CF /* Extensions.swift */; };
 		762B3A57213B7E29005100DB /* ThumbnailStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B3A56213B7E29005100DB /* ThumbnailStore.swift */; };
+		76B1CE3D2146A5E30037B6FC /* PDFKitReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B1CE3C2146A5E30037B6FC /* PDFKitReader.swift */; };
 		76BDEEC4213CDF8D00C6AD0E /* input_pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 76BDEEC3213CDF8D00C6AD0E /* input_pdf.pdf */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +102,7 @@
 		762152A921367C200035B0CF /* ThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCell.swift; sourceTree = "<group>"; };
 		762152E42136D7340035B0CF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		762B3A56213B7E29005100DB /* ThumbnailStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailStore.swift; sourceTree = "<group>"; };
+		76B1CE3C2146A5E30037B6FC /* PDFKitReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitReader.swift; sourceTree = "<group>"; };
 		76BDEEC3213CDF8D00C6AD0E /* input_pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = input_pdf.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +195,7 @@
 				760EC21521217263005F6870 /* ScrollView.swift */,
 				760EC21321217263005F6870 /* ContentPageView.swift */,
 				760EC21821217263005F6870 /* Slider.swift */,
+				76B1CE3C2146A5E30037B6FC /* PDFKitReader.swift */,
 				762152A821367BEC0035B0CF /* Thumbnail */,
 				7621524C212FEAA90035B0CF /* Crop */,
 				762152E32136D70E0035B0CF /* Extensions */,
@@ -395,6 +398,7 @@
 			files = (
 				760EC21A21217264005F6870 /* PKCurlReader.swift in Sources */,
 				7621524E212FEB0C0035B0CF /* CropHandleView.swift in Sources */,
+				76B1CE3D2146A5E30037B6FC /* PDFKitReader.swift in Sources */,
 				760EC21D21217264005F6870 /* ThumbnailViewController.swift in Sources */,
 				7621529C21353B150035B0CF /* MD5Digest.swift in Sources */,
 				762B3A57213B7E29005100DB /* ThumbnailStore.swift in Sources */,
