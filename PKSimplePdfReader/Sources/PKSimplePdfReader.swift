@@ -41,15 +41,15 @@ public struct ReaderInfo {
         return CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
     }()
     
-    // Other transition styles are not supported (for now).
-    public var transitionStyle = UIPageViewControllerTransitionStyle.pageCurl
-    
     var navigationOrientation = UIPageViewControllerNavigationOrientation.horizontal
     
     var isPad = true
     
     var pdfDocument: PDFDocument
 
+    // Other transition styles are not supported (for now).
+    public var transitionStyle: UIPageViewControllerTransitionStyle = UIPageViewControllerTransitionStyle.pageCurl
+    
     public var title: String = ""
 
     public var backgroundColor: UIColor? = UIColor.lightGray
