@@ -51,6 +51,9 @@ class ContentPageView: UIView {
         // Avoid crashing.
         guard let _ = pdfPage.pageRef else { return }
         
+        UIGraphicsPushContext(context)
+        context.saveGState()
+
         // Fill the background with white.
         context.setFillColor(UIColor.white.cgColor)
         context.fill(context.boundingBoxOfClipPath)
@@ -68,6 +71,9 @@ class ContentPageView: UIView {
         // Render the PDF page into the context
         pdfPage.draw(with: .cropBox, to: context)
         //if let pageRef = pdfPage.pageRef { context.drawPDFPage(pageRef) }
+        
+        context.restoreGState()
+        UIGraphicsPopContext()
     }
     
 }
