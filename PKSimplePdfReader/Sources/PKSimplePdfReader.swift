@@ -42,7 +42,7 @@ public struct ReaderInfo {
     }()
     
     // Other transition styles are not supported (for now).
-    var transitionStyle = UIPageViewControllerTransitionStyle.pageCurl
+    public var transitionStyle = UIPageViewControllerTransitionStyle.pageCurl
     
     var navigationOrientation = UIPageViewControllerNavigationOrientation.horizontal
     
@@ -106,11 +106,11 @@ public struct ReaderInfo {
 }
 
 public class PKSimplePdfReader {
-//    public class func create(_ readerInfo: ReaderInfo) -> PKCurlReader? {
-//        return PKCurlReader(readerInfo)
-//    }
-    
     public class func create(_ readerInfo: ReaderInfo) -> UIViewController? {
-        return PDFKitReader(readerInfo)
+        if readerInfo.transitionStyle == .pageCurl {
+            return PKCurlReader(readerInfo)
+        } else {
+            return PDFKitReader(readerInfo)
+        }
     }
 }

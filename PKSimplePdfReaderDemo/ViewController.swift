@@ -45,6 +45,7 @@ class ViewController: UITableViewController {
             info.title = "Customize"
             info.backgroundColor = UIColor.orange
             info.saveLastPageIndex = true
+            info.transitionStyle = .scroll // use pdfkit ver.
             guard let vc = PKSimplePdfReader.create(info) else { return }
             navigationController?.pushViewController(vc, animated: true)
             
