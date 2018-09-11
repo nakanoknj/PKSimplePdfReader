@@ -42,6 +42,7 @@ class ViewController: UITableViewController {
                 return
             }
             var info = ReaderInfo(of: pdfDocument)
+            info.transitionStyle = .scroll
             info.title = "Customize"
             info.backgroundColor = UIColor.orange
             info.saveLastPageIndex = true

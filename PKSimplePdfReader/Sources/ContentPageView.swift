@@ -108,8 +108,8 @@ class ContentTile: CATiledLayer {
         self.tileSize = CGSize(width: sizeOfTiles, height: sizeOfTiles)
     }
     
-    class override func fadeDuration() -> CFTimeInterval {
-        return 0.001
-    }
+//    class override func fadeDuration() -> CFTimeInterval {
+//        return 0.001
+//    }
     
 }
